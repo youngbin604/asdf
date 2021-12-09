@@ -1,0 +1,415 @@
+<!DOCTYPE html><!-- 22161124 한영빈 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+
+    <title> 줄거리 </title>
+
+    <link rel="stylesheet" href="http://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+    <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+      .clear {
+        clear: both;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      body {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(./img/back.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+     #body-wrapper {
+       min-height: 100%;
+       position: relative;
+     }
+
+     #body-content {
+       margin-top: 100px;
+       padding-bottom: 80px;;
+     }
+
+
+      header {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        position: fixed;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+
+      #nav {
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #menus {
+        float: right;
+        display: flex;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 10px;
+      }
+
+      #main_menu {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-family: '을유1945';
+      font-size: 18px;
+      color: black;
+      }
+
+      #main_menu li {
+        display: inline;
+        margin-left: 80px;
+      }
+
+      a {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:link {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:visited {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      a:active {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      /*헤더 끝*/
+
+      table {
+        border-spacing: 20px;
+        object-fit:contain;
+      }
+
+      td {
+        padding: 15px;
+      }
+
+      .textright {
+        text-align: right;
+      }
+
+      .content-wrapper {
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 80px;
+      }
+
+      .place {
+        color: #FF8C0A;
+      }
+
+      .content {
+        width: 70%;
+        margin: auto;
+      }
+
+
+      .left {
+        float: left;
+        width: 13%;
+        position: fixed;
+      }
+
+      .subnav {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 50px 0;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+        text-align: center;
+        margin-top: 10px;
+      }
+
+
+      .subnav h3 {
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 5px;
+        line-height: 40px;
+        font-family: '을유1945';
+      }
+
+      .subcate a {
+        text-decoration: none;
+      }
+
+      .subtext {
+        margin-top: 0;
+        line-height: 40px;
+        font-family: 'pretendard';
+      }
+
+
+      .right {
+        float: right;
+        width: 78%;
+        margin-top: 15px;
+      }
+
+      .content2 {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 30px 40px 20px 40px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+        font-family: 'pretendard';
+        line-height: 25px;
+      }
+
+      .content2 h2 {
+        line-height: 35px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 10px;
+        font-family: '을유1945';
+
+      }
+
+      .content2 h3 {
+        line-height: 35px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 10px;
+        font-family: '을유1945';
+
+      }
+
+      .figure {
+        margin-top: 30px;
+        text-align: center;
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        margin-bottom: 20px;
+      }
+
+      .highlight {
+        color: #FF9100;
+      }
+
+
+      /*내용*/
+
+      footer {
+        z-index: 999;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        display: inline-block
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+      }
+
+      #footer1 {
+        margin: auto;
+        width: 70%;
+      }
+
+
+      .footer_text1 {
+        float: left;
+        font-size: 15px;
+        font-family: 'pretendard';
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer_text2 {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+
+      /*푸터*/
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <header>
+
+      <div id="nav">
+
+        <div id="logo">
+          <a href="index.html"><img src="./img/logo.png"></a>
+        </div>
+
+      <nav id="menus">
+        <ul id="main_menu">
+          <li> <a href="./sub01.html"> 기본정보 </a> </li>
+          <li> <a href="./sub02.html"> <span class="place"> 줄거리 </span> </a> </li>
+          <li> <a href="./sub03.html"> 인물소개</a> </li>
+          <li> <a href="./sub04.html"> 갤러리</a> </li>
+        </ul>
+       </nav>
+        </div>
+
+    </header>
+
+    <div class="content-wrapper">
+    </div>
+
+    <div class="content">
+
+      <div class="left">
+
+        <div class="subnav">
+          <h3>줄거리</h3>
+          <div class="subtext">
+            <ul>
+              <li><a href="./sub02.html"> 개요 </a></li>
+              <li><a href="./sub02_1.html">  1~6회차  </a></li>
+              <li><a href="#"> <span class="place"> 7~12회차 </span></a></li>
+            </ul>
+
+          </div>
+
+          <div class="clear">
+          </div>
+
+        </div>
+      </div>
+
+<div data-aos="fade-in" data-aos-duration="1300">
+
+
+      <div class="right">
+        <div class="content2">
+          <h2>7~12회차 줄거리</h2>
+          <table>
+            <tr>
+              <th></th> <th> </th>
+            </tr>
+            <tr>
+              <td><img src="./img/07.jpg" class="figure"></td> <td> <b>7화</b> <br>
+                자신이 버린 시계와 다시 재회하게 된 혜자(김혜자). <br>
+                게다가 고장 난 줄 알았던 시계가 다시 움직인다는 것을 깨닫고 <br>소스라치게 놀라고... <br>
+                혜자는 시계로 모든 것을 되돌릴 수 있다는 생각에 <br>시계를 되찾기로 결심한다. <br>
+                한편, 준하(남주혁)는 문득 혜자에게 혜자(한지민)의 안부를 묻는다. <br>
+                하지만 자신이 찾는 사람이 눈앞에 있는 것도 모른 채, <br>
+                준하는 홍보관 분위기를 어수선하게 만드는 혜자에게 더 이상 찾아오지 말아 달라 이야기를 하는데...<br>
+            </tr>
+
+            <tr>
+               <td class="textright"> <b>8화</b> <br>
+              모든 것을 체념하고 삶을 포기했던 준하(남주혁)는 혜자(한지민)를 <br>생각하며 어지러웠던 생활을 정리하고 떠날 결심을 한다. <br>
+              혜자(김혜자)는 준하를 곁에서 말없이 지켜보며 자신도 <br>잃어버린 시간에 대한 미련을 떠나보낼 준비를 하고... <br>
+              한편, 미국에 있는 아들에게 편지를 보내고 있다는 준하의 거짓말을 철썩 같이 믿고 있던 샤넬할머니(정영숙). <br>
+              결국 찾아오지 않는 아들을 보기위해 직접 미국으로 가려 하는데...
+              <td> <img src="./img/08.jpg" class="figure"></td>
+            </tr>
+
+            <tr>
+              <td> <img src="./img/09.jpg" alt="" class="figure"></td>
+              <td><b>9화</b> <br>
+                샤넬할머니(정영숙)가 사망했다는 소식을 듣고 혜자(김혜자)와 준하(남주혁)는 큰 충격을 받는다. <br>
+                샤넬할머니와 가깝게 지내던 준하는 조사를 받게 되지만 그녀의 행적과 자신의 알리바이를 말하지 않고 입을 굳게 다물고... <br>
+                게다가 샤넬할머니가 가입한 사망보험의 보험금 수령자가 준하라는 것이 밝혀지며 혜자를 비롯한 두 사람을 아는 모든 이들이 혼란에 빠지는데...
+              </td>
+            </tr>
+
+            <tr>
+
+              <td class="textright"><b>10화</b> <br>
+                겉으로 티내진 않지만 혜자(김혜자)는 떠난 준하(남주혁)가 그립다. <br>
+                그런데 우연히 들린 준하의 집에서 여행 가방이 그대로 남아있는 것을 보고 혜자는 준하가 출국하지 않았다는 사실을 알게 되고...<br>
+                한편, 준하의 소식을 알기 위해 홍보관을 찾은 혜자는 희원(김희원)이 사망보험에 가입된 노인들만 야유회를 데리고 간다는
+                사실에 수상함을 느끼는데...
+              </td>
+              <td> <img src="./img/10.jpg" alt="" class="figure"></td>
+            </tr>
+
+            <tr>
+              <td> <img src="./img/11.jpg" alt="" class="figure"></td>
+              <td><b>11화</b> <br>
+                기나긴 꿈에서 깨어난 혜자(김혜자). <br>
+                눈이 부셨던 혜자의 기억 속엔 준하(남주혁)와 준하와의 <br>추억이 담긴 시계가 있었다. <br>
+                그리고 오랜 시간이 지난 지금, 드디어 혜자는 <br>시계의 정체를 알고 있는 사람과 마주하게 되는데...
+              </td>
+            </tr>
+
+            <tr>
+
+              <td class="textright"><b>12, 최종화</b> <br>
+              뒤섞여 있는 기억을 담담히 정리해나가는 혜자(김혜자). <br>
+              하지만 길고 길었던 인생을 온전히 기억해내기가 쉽지만은 않다. <br>
+              그리고 어머니를 조금씩 이해하기 시작한 아들(안내상)은 혜자에게 언제가 가장 행복한 시간이었나를 묻고... <br>
+              혜자는 긴 인생에서 가장 행복했던 시간에 대해 입을 여는데... <br>
+              <span class="highlight">여러분의 가장 눈부셨던 시간은 언제인가요?</span>
+              </td>
+              <td> <img src="./img/12.jpg" alt="" class="figure"></td>
+            </tr>
+          </table>
+
+          </div>
+      </div>
+</div>
+
+    <div class="clear">
+    </div>
+
+        <footer>
+        <div id="footer1">
+        <div class="footer_text1">
+          JTBC 제이티비씨(주) 사업자등록번호:  104-86-33995 통신판매업신고번호:  2017-서울마포-0896  <br>
+          DISIGNER: 한영빈 EMAIL: 22161124@kaywon.ac.kr <br>
+          Copyright © 2021. 한영빈. All rights reserved.
+            </div>
+
+        <div class="footer_text2">
+          <a href="https://tv.jtbc.joins.com/dazzling" target="_blank"><img src="./img/internet.png"></a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/jtbcdrama/" target="_blank"><img src="./img/instagram.png"> </a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.youtube.com/channel/UCF3UEVPt5zZTlBVJwDG317g" target="_blank"><img src="./img/youtube.png"> </a>
+        </div>
+
+        </div>
+      </footer>
+
+      <div class="clear">
+      </div>
+
+      <script src="http://unpkg.com/aos@2.3.1/dist/aos.js">
+      </script>
+      <script>
+        AOS.init();
+      </script>
+
+  </body>
+
+</html>

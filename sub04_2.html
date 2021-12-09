@@ -1,0 +1,441 @@
+<!DOCTYPE html><!-- 22161124 한영빈 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title> 줄거리 </title>
+    <link rel="stylesheet" href="http://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+    <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+      .clear {
+        clear: both;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      body {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(./img/back.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+     #body-wrapper {
+       min-height: 100%;
+       position: relative;
+     }
+
+     #body-content {
+       margin-top: 100px;
+       padding-bottom: 80px;;
+     }
+
+
+      header {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        position: fixed;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+
+      #nav {
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #menus {
+        float: right;
+        display: flex;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 10px;
+      }
+
+      #main_menu {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-family: '을유1945';
+      font-size: 18px;
+      color: black;
+      }
+
+      #main_menu li {
+        display: inline;
+        margin-left: 80px;
+      }
+
+      a {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:link {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:visited {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      a:active {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      /*헤더 끝*/
+      table {
+        border-spacing: 20px;
+        object-fit:contain;
+      }
+
+      td {
+        padding: 15px;
+      }
+
+      .textright {
+        text-align: right;
+      }
+
+      .content-wrapper {
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 80px;
+      }
+
+      .place {
+        color: #FF8C0A;
+      }
+
+      .content {
+        width: 70%;
+        margin: auto;
+      }
+
+
+      .left {
+        float: left;
+        width: 13%;
+        position: fixed;
+      }
+
+      .subnav {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 50px 0;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .subnav h3 {
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 5px;
+        line-height: 40px;
+        font-family: '을유1945';
+      }
+
+      .subcate a {
+        text-decoration: none;
+      }
+
+      .subtext {
+        margin-top: 20px;
+        line-height: 40px;
+        font-family: 'pretendard';
+      }
+
+
+      .right {
+        float: right;
+        width: 75%;
+        margin-top: 15px;
+      }
+
+      .content2 {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 30px 40px 20px 40px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+        font-family: 'pretendard';
+        line-height: 25px;
+      }
+
+      .content2 h2 {
+        line-height: 35px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 10px;
+        font-family: '을유1945';
+
+      }
+
+      .content2 h3 {
+        line-height: 35px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 10px;
+        font-family: '을유1945';
+
+      }
+
+      .figure {
+        margin-top: 30px;
+        text-align: center;
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        margin-bottom: 20px;
+      }
+
+      .highlight {
+        color: #FF9100;
+      }
+
+      .line {
+        font-size: 15px;
+        text-align: center;
+        line-height: 30px;
+        font-family: 'prtendard';
+      }
+
+      .source {
+        color: gray;
+        font-size: 14px;
+      }
+
+
+      /*내용*/
+
+      footer {
+        z-index: 999;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        display: inline-block
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+      }
+
+      #footer1 {
+        margin: auto;
+        width: 70%;
+      }
+
+
+      .footer_text1 {
+        float: left;
+        font-size: 15px;
+        font-family: 'pretendard';
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer_text2 {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      /*푸터*/
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="nav">
+
+        <div id="logo">
+          <a href="index.html"><img src="./img/logo.png"></a>
+        </div>
+
+      <nav id="menus">
+        <ul id="main_menu">
+          <li> <a href="./sub01.html"> 기본정보 </a> </li>
+          <li> <a href="./sub02.html">  줄거리  </a> </li>
+          <li> <a href="./sub03.html"> 인물소개</a> </li>
+          <li> <a href="./sub04.html"> <span class="place"> 갤러리 </span></a> </li>
+        </ul>
+       </nav>
+        </div>
+
+    </header>
+
+    <div class="content-wrapper">
+    </div>
+
+    <div class="content">
+
+      <div class="left">
+        <div class="subnav">
+
+            <h3>갤러리</h3>
+
+          <div class="subtext">
+            <ul>
+              <li><a href="./sub04.html">  스틸컷 </a></li>
+              <li><a href="./sub04_1.html"> OST</a></li>
+              <li><a href="./sub04_2.html"> <span class="place">명대사</span> </a></li>
+              <li><a href="./sub04_3.html"> DVD </a></li>
+            </ul>
+
+          </div>
+
+          <div class="clear">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="content2">
+          <div data-aos="fade-in" data-aos-duration="1300">
+          <h2> 명대사 </h2>
+          <img src="./img/04_2.gif" class="figure">
+          <br>
+         <p class="line"> 내 삶은 때론 불행했고 때론 행복했습니다. <br>
+           삶이 한낱 꿈에 불과하다지만 <br>
+           그럼에도 살아서 좋았습니다. <br>
+           <br>
+​           <br>
+
+          새벽에 쨍한 차가운 공기, <br>
+          꽃이 피기 전 부는 달큰한 바람, <br>
+          해질 무렵 우러나는 노을의 냄새 <br>
+          어느하루 눈부시지 않은 날이 없었습니다. <br>
+          <br>
+          <br>
+          지금 삶이 힘든 당신, <br>
+          이 세상에 태어난 이상 당신은 <br>
+          이 모든걸 매일 누릴 자격이 있습니다. <br>
+          <br>
+​          <br>
+          대단하지 않은 하루가 지나고 <br>
+          또 별거 아닌 하루가 온다해도 <br>
+          인생은 살 가치가 있습니다. <br>
+          <br>
+​          <br>
+          후회만 가득한 과거와 <br>
+          불안하기만한 미래 때문에 <br>
+          지금을 망치지 마세요. <br>
+          <br>
+          오늘을 살아가세요. <br>
+          <br>
+          <br>
+          눈이부시게, <br>
+          당신은 그럴 자격이 있습니다. <br>
+          <br>
+          <br>
+        <span class="highlight"> <b>누군가의 엄마였고, 누이였고, 딸이였고 <br>
+          그리고 나였을 그대들에게.. </b> </span><br><br>
+          </p>
+          </div>
+          </div>
+
+          <div class="clear">
+          </div>
+
+<div data-aos="fade-in">
+          <div class="content2">
+              <table>
+                <tr>
+                  <th></th> <th> </th>
+                </tr>
+                <tr>
+                  <td><img src="./img/line2.jpg" class="figure"></td>
+                  <td> 오로라는 에러야. <br>
+                    원래 지구 밖에 있는 자기장인데 어쩌다 보니 <br> 북극으로 흘러들어왔다는 거야. <br>
+                    그런데 너무 아름다운 거야. <br>
+                    에러도 아름다울 수 있어. <br>
+                   <span class="source">눈이 부시게, 7화 中 </span> </td>
+                </tr>
+
+                <tr>
+                  <td class="textright"> 물건의 가치만큼 돈을 지불하고 <br> 물건을 사는 것처럼 <br>
+                    뭔가를 갖고 싶으면 그 가치만큼 <br> 무언가를 희생해야 된다는 거야. <br><br>
+
+                    이것만 기억해놔. <br>
+                    등가교환. <br>
+                    거저 주어지는 건 없어. <br>
+                    <span class="source">눈이 부시게, 7화 中
+                  </td>
+                  <td> <img src="./img/line4.jpg" alt="" class="figure"></td>
+                </tr>
+
+                <tr>
+                  <td> <img src="./img/line3.jpg" class="figure"></td>
+                   <td > 나의 인생이 불행했다고 생각했습니다. 억울하다고 생각했습니다. <br>
+                     그런데 지금 생각해보니 당신과 행복했던 기억부터 불행했던 기억까지 <br>
+                     그 모든 기억으로 지금까지 버티고 있었던 거였습니다. <br>
+                     그 기억이 없어질지도 모른다고 생각하니 더 무섭습니다.<br>
+                     <span class="source">눈이 부시게, 12화 中 </span></td>
+
+
+                </tr>
+
+
+                </table>
+        </div>
+        </div>
+      </div>
+
+    <div class="clear">
+    </div>
+
+
+        <footer>
+        <div id="footer1">
+        <div class="footer_text1">
+          JTBC 제이티비씨(주) 사업자등록번호:  104-86-33995 통신판매업신고번호:  2017-서울마포-0896  <br>
+          DISIGNER: 한영빈 EMAIL: 22161124@kaywon.ac.kr <br>
+          Copyright © 2021. 한영빈. All rights reserved.
+            </div>
+
+        <div class="footer_text2">
+          <a href="https://tv.jtbc.joins.com/dazzling" target="_blank"><img src="./img/internet.png"></a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/jtbcdrama/" target="_blank"><img src="./img/instagram.png"> </a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.youtube.com/channel/UCF3UEVPt5zZTlBVJwDG317g" target="_blank"><img src="./img/youtube.png"> </a>
+        </div>
+
+        </div>
+      </footer>
+
+      <div class="clear">
+      </div>
+
+      <script src="http://unpkg.com/aos@2.3.1/dist/aos.js">
+      </script>
+      <script>
+        AOS.init();
+      </script>
+
+  </body>
+
+</html>
