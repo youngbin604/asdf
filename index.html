@@ -1,0 +1,256 @@
+<!DOCTYPE html><!-- 22161124 한영빈 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title> 눈이 부시게 </title>
+    <link rel="stylesheet" href="http://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+    <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+      .clear {
+        clear: both;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      body {
+        padding: 0px;
+        margin: 0px;
+     }
+
+      video {
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+      }
+
+      header {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        position: fixed;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+
+      #nav {
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #menus {
+        float: right;
+        display: flex;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 10px;
+      }
+
+      #main_menu {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-family: '을유1945';
+      font-size: 18px;
+      color: black;
+      }
+
+      #main_menu li {
+        display: inline;
+        margin-left: 80px;
+      }
+
+      a {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:link {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:visited {
+        text-decoration:none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      a:active {
+        text-decoration:none;
+        color: #FF8C0A;
+      }
+
+      .fade {
+      animation: fadein 1.5s;
+      -moz-animation: fadein 1.5s;
+      -webkit-animation: fadein 1.5s;
+      -o-animation: fadein 1.5s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+      /*헤더 끝*/
+
+    .img {
+      position: absolute;
+      width: 100%;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      }
+
+      /*내용*/
+
+      footer {
+        z-index: 999;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+      }
+
+      #footer1 {
+        margin: auto;
+        width: 70%;
+      }
+
+
+      .footer_text1 {
+        float: left;
+        font-size: 15px;
+        font-family: 'pretendard';
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer_text2 {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+
+
+      /*푸터*/
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="fade">
+
+
+    <header>
+
+      <div id="nav">
+
+        <div id="logo">
+          <a href="./index.html"><img src="./img/logo.png"></a>
+        </div>
+
+      <nav id="menus">
+        <ul id="main_menu">
+          <li> <a href="./sub01.html"> 기본정보 </a> </li>
+          <li> <a href="./sub02.html"> 줄거리</a> </li>
+          <li> <a href="./sub03.html"> 인물소개</a> </li>
+          <li> <a href="./sub04.html"> 갤러리</a> </li>
+        </ul>
+       </nav>
+        </div>
+
+    </header>
+
+    <div>
+      <video src="./img/video.mp4" autoplay loop muted></video>
+
+      <div class="img">
+        <img src="./img/main_text.png"> <br>
+        <a href="./sub01.html"><img src="./img/main_logo.png"></a>
+      </div>
+    </div>
+
+        <footer>
+          <div id="footer1">
+
+
+        <div class="footer_text1">
+          JTBC 제이티비씨(주) 사업자등록번호:  104-86-33995 통신판매업신고번호:  2017-서울마포-0896  <br>
+          DISIGNER: 한영빈 EMAIL: 22161124@kaywon.ac.kr <br>
+          Copyright © 2021. 한영빈. All rights reserved.
+            </div>
+
+
+        <div class="footer_text2">
+          <a href="https://tv.jtbc.joins.com/dazzling" target="_blank"><img src="./img/internet.png"></a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/jtbcdrama/" target="_blank"><img src="./img/instagram.png"> </a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.youtube.com/channel/UCF3UEVPt5zZTlBVJwDG317g" target="_blank"><img src="./img/youtube.png"> </a>
+        </div>
+
+        </div>
+      </footer>
+
+    </div>
+
+      <div class="clear">
+      </div>
+
+      <script src="http://unpkg.com/aos@2.3.1/dist/aos.js">
+      </script>
+      <script>
+        AOS.init();
+      </script>
+
+
+  </body>
+
+</html>
